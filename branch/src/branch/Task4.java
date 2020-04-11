@@ -5,30 +5,25 @@ import java.util.Scanner;
 public class Task4 {
 
 	public static void main(String[] args) {
-                            // TODO 自動生成されたメソッド・スタブ
-
     Scanner scan=new Scanner(System.in);
-
-    System.out.println("数値を入力してください");
-
-    int num1= scan.nextInt();
-    int num2 =scan.nextInt();
+    int numA = scan.nextInt();
+    int numB = scan.nextInt();
                                                         
-    	System.out.println("num1:"+num1);
-    	System.out.println("num2:"+num2);
+    	System.out.println("numA:"+numA);
+    	System.out.println("numB:"+numB);
                                                         
-        if(num1<=0||num2<=0){
+        if(numA <= 0 || numB <= 0){
         	System.out.println("正の数を入力してください");
         }
                                                         
-        else if(num1%num2==0) {
+        else if(numA % numB == 0) {
                                                                       
-        	System.out.println("num2はnum1の約数です");
+        	System.out.println("numBはnumAの約数です");
         }
                                                         
-        else if(num1%num2 !=0) {
+        else if(numA % numB != 0) {
                                                             
-        	System.out.println("num2はnum1の約数ではありません");
+        	System.out.println("numBはnumAの約数ではありません");
         }
   
         scan.close();

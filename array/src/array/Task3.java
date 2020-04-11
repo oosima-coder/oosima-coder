@@ -23,7 +23,7 @@ public static void main(String[] args) {
 		min = Math.min(min, num);
 	}		System.out.println("]");
 	
-	System.out.println("最大値：" + max);
-	System.out.println("最小値：" + min);
+			System.out.println("最大値：" + max);
+			System.out.println("最小値：" + min);
 
 	}}
