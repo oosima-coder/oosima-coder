@@ -1,45 +1,32 @@
 package branch;
 import java.util.Scanner;
-
 public class Task6 {
-
 	public static void main(String[] args) {
-		// TODO 自動生成されたメソッド・スタブ
-		
-		 //標準入力を取得
 	    Scanner scanner = new Scanner(System.in);
-
-	    //数字入力
-	    System.out.println("１から５までの数字を入力してください");
-
-	    //５行
+	    System.out.println("1から5までの数字を入力してください");
 	    int input1 = scanner.nextInt();
-	  
-	    
+	    String name = "";
 	    switch(input1) {
 	    	case 1:
-	    		System.out.println("1->I");
+	    		name = "Ⅰ";
 	    		break;
-	    case 2:
-    		System.out.println("2->II");
-    		break;
-	    case 3:
-    		System.out.println("3->III");
-    		break;
-	    case 4:
-			System.out.println("4->IV");
-			break;
-	    case 5:
-			System.out.println("5->V");
-			break;
+	    	case 2:
+	    		name = "Ⅱ";
+	    		break;
+	    	case 3:
+	    		name = "Ⅲ";
+	    		break;
+	    	case 4:
+	    		name = "Ⅳ";
+	    		break;
+	    	case 5:
+	    		name = "Ⅴ";
+	    		break;
 		default:
-			System.out.println("unknown");
-			break;
+			name = "unknown";
+				break;
 	    }
-	    
-
-	    
-			
+	    	System.out.println(input1 + " -> " + name);
+	
 	}
-
 }

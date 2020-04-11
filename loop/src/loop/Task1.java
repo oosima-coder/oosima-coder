@@ -6,8 +6,7 @@ public class Task1 {
 
 	    Scanner scanner = new Scanner(System.in);
 
-	    //入力
-	    	System.out.println("数値を入力してください");
+	    	System.out.print("数字を入力してください: ");
 
 	    int input1 = scanner.nextInt();
 
@@ -15,8 +14,8 @@ public class Task1 {
 		for(int i = 1; i <= input1; i++) {
 			sum += i;
 		}
-			System.out.println("1～"+input1+"までの合計："+sum);
-
+			System.out.println("1～" + input1 + "までの合計： " + sum);
+			scanner.close();
 	}
 
 }
