@@ -10,11 +10,7 @@ public class Task3 {
 		items.put("メロン", 6000);
 
 		for(HashMap.Entry<String, Integer>price : items.entrySet()) {
-		System.out.print(price.getKey());
-		System.out.print(":");
-		System.out.print(price.getValue());
-		System.out.println("円");
+			System.out.println(price.getKey()+ ":" + price.getValue() + "円");
 		}
 	}
-
 }
