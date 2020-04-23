@@ -10,10 +10,10 @@ public class Task2 {
 		int num2 = num1 / d;
 		double num3 = num1 / e;
 		
-			System.out.print("合計:");
-			System.out.println(num1);
-			System.out.println("平均（3で割った時）:" + num2);
-			System.out.println("平均(3.0で割った時):" + num3);
+		System.out.print("合計:");
+		System.out.println(num1);
+		System.out.println("平均（3で割った時）:" + num2);
+		System.out.println("平均(3.0で割った時):" + num3);
 	}
 
 }

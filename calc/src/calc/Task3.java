@@ -10,15 +10,16 @@ public class Task3 {
 	    int input1 = scanner.nextInt();
 	    int input2 = scanner.nextInt();
 	    int input3 = scanner.nextInt();
-	    int num1 = input1+input2+input3;
+	    int num1 = input1 + input2 + input3;
 	    
-	    	System.out.println("合計:" + num1);
+	    System.out.println("合計:" + num1);
 	    
 	    int num2 = num1 / 3;
 	    double num3 = num1 / 3.0;
-	    	System.out.println("平均(3で割ったとき):"+(num2));
+	    System.out.println("平均(3で割ったとき):"+(num2));
 	    
-	    	System.out.println("平均(3.0で割ったとき):"+(num3));
+	    System.out.println("平均(3.0で割ったとき):"+(num3));
 	    		
-			scanner.close();
-	}}
+		scanner.close();
+	}
+}
