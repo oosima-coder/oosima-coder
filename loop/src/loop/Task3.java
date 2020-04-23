@@ -4,11 +4,14 @@ public class Task3 {
 
 	public static void main(String[] args) {
 	    Scanner scanner = new Scanner(System.in);
-	    	System.out.print("数字を入力してください: ");
+	    System.out.print("数字を入力してください: ");
 
 	    int sum1 = scanner.nextInt();
-	    	System.out.print("桁数: " + String.valueOf(sum1).length());
-	    	scanner.close();
+	    int num1 = 0;
+	    while(sum1 > 0) {
+	    	num1++;
+	    	sum1 = sum1 / 10;
+	    }
+	    System.out.println("桁数: " + num1);
 	}
-
 }
