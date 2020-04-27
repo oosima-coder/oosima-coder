@@ -1,21 +1,20 @@
 package standardClass;
 
-import java.util.Calendar;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 
 public class Task6 {
 
 	public static void main(String[] args) {
-		Calendar cal1 = Calendar.getInstance();
+		Date now = new Date();
 	
-		System.out.print(cal1.get(Calendar.YEAR) + "年");
-		System.out.print(cal1.get(Calendar.MONTH) + 1 + "月");
-		System.out.println(cal1.get(Calendar.DAY_OF_MONTH) + "日");
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy年MM月dd日");
+		SimpleDateFormat sdf2 = new SimpleDateFormat("yyyy年MM月dd日HH時mm分");
+		System.out.println(sdf.format(now));
+		System.out.println(sdf2.format(now));
 		
-		System.out.print(cal1.get(Calendar.YEAR) + "年");
-		System.out.print(cal1.get(Calendar.MONTH) + 1 + "月");
-		System.out.print(cal1.get(Calendar.DAY_OF_MONTH) + "日");
-		System.out.print(cal1.get(Calendar.HOUR_OF_DAY) + "時");
-		System.out.print(cal1.get(Calendar.MINUTE) + "分");
+		
 	
 	}
 }
