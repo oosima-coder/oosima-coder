@@ -12,6 +12,7 @@ public class Task3 {
 	    	num1++;
 	    	sum1 = sum1 / 10;
 	    }
-	    System.out.println("桁数: " + num1);
+	    	System.out.println("桁数: " + num1);
+	    	scanner.close();
 	}
 }

@@ -11,7 +11,7 @@ public class Task1 {
 		for(int i = 1; i <= input1; i++) {
 			sum += i;
 		}
-		System.out.println("1～" + input1 + "までの合計： " + sum);
-		scanner.close();
+			System.out.println("1～" + input1 + "までの合計： " + sum);
+			scanner.close();
 	}
 }

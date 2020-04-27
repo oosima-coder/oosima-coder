@@ -10,7 +10,7 @@ public class Task4 {
 	    System.out.print(input1+"の約数：");
 		for(int i = 1; i < input1; i++) {
 			if(input1 % i == 0) {
-			System.out.print(i + ",");
+				System.out.print(i + ",");
 			}
 		}
 		scanner.close();

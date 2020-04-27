@@ -9,7 +9,7 @@ public class Task2 {
 	    int input1 = scanner.nextInt();
 	    int sum = 1;
 	    System.out.print(1);
-	    for(int i = 2; i <= input1; i++) {
+	    for(int i = 1; i <= input1; i++) {
 	    	System.out.print(" + " + i);
 	    	sum += i;
 	    }
