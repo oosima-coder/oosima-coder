@@ -22,11 +22,11 @@ public class Task6 {
 	    	case 5:
 	    		name = "Ⅴ";
 	    		break;
-		default:
-			name = "unknown";
+	    	default:
+	    		name = "unknown";
 				break;
 	    }
 	    	System.out.println(input1 + " -> " + name);
-	
+	    	scanner.close();
 	}
 }
