@@ -26,7 +26,7 @@ public class Task6 {
 	    		name = "unknown";
 				break;
 	    }
-	    	System.out.println(input1 + " -> " + name);
-	    	scanner.close();
+	    System.out.println(input1 + " -> " + name);
+	    scanner.close();
 	}
 }

@@ -3,10 +3,10 @@ import java.util.Scanner;
 
 public class Task1 {
 
-public static void main(String[] args) {
+	public static void main(String[] args) {
           
 		System.out.println("10以上の数値を入力して下さい");
-		Scanner scanner=new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
                             
 		int number1 = scanner.nextInt();
                       
