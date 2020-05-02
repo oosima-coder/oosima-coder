@@ -12,7 +12,7 @@ public class Task2 {
 			System.out.println("値:" + num1);
 		}else{
 			System.out.println("値:0" + num1);
-        }
+		}
 		scan.close();
 	}
 }
