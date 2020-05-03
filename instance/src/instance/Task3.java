@@ -7,6 +7,6 @@ public class Task3 {
 		person.name = "oosima";
 		person.age = 30;
 		person.myProfile();
-		
+
 	}
 }
