@@ -6,10 +6,10 @@ public class Task5 {
 			for ( int y = 1; y <= 9; y++ ) {
 				if( x * y < 10 )
 					System.out.print( " " ); 
-					System.out.print ( x * y + " " );
+				System.out.print ( x * y + " " );
 			} 
-				System.out.println ( );
-		
+			System.out.println ( );
+
 		}
 	}
 }
