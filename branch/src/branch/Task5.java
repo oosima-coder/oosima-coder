@@ -10,7 +10,7 @@ public class Task5 {
 		System.out.println("numA:" + numA);
 		System.out.println("numB:" + numB);
 		System.out.println("numC:" + numC);
-	
+
 		if(numA >= numB && numA >= numC) {
 			System.out.println("最大値:" + numA);
 		}else if(numB >= numA && numB >= numC){
@@ -18,6 +18,6 @@ public class Task5 {
 		}else {
 			System.out.println("最大値:" + numC);
 		}
-        scan.close();
+		scan.close();
 	}
 }
