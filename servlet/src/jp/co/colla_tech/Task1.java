@@ -25,7 +25,7 @@ public class Task1 extends HttpServlet {
 		out.println("<!DOCTYPE html>");
 		out.println("<html>");
 		out.println("<head>");
-		out.println("<meta charset = 'Shit_JIS'>");
+		out.println("<meta charset = 'Shift_JIS'>");
 		out.println("<title> ServletTask </title> ");
 		out.println("</head>");
 		out.println("<body>");
