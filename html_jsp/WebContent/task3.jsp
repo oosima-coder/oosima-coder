@@ -12,7 +12,7 @@
 
 <%
 	SimpleDateFormat sdf = new SimpleDateFormat("yyyy年MM月dd日");
-sdf.format(date);
+    sdf.format(date);
 %>
 <meta charset="UTF-8">
 <title>JSP KADAI</title>
@@ -20,13 +20,11 @@ sdf.format(date);
 <body>
 	<h1>
 		訪問回数:
-		<%=count++%>
+		<%= count++ + 1 %>
 	</h1>
 	<p>
 		今日の日付:
-		<%
-		out.print(sdf.format(date));
-	%>
+		<% out.print(sdf.format(date)); %>
 	</p>
 
 </body>
