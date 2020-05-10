@@ -1,15 +1,20 @@
 package object;
 
 public class Person {
-	private String name;
-	private int age;
+	String name;
+	int age;
 	static int wallet;
-	Person(){
-		String name;
-		int age;
+
+	public Person(){
+
 	}
-	Person(int wallet){
-		System.out.println(wallet);
+	public Person(String name,int age) {
+		this. name = name;
+		this.age = age;
+	}
+	public Person(int money){
+		Person.wallet += money;
+
 	}
 
 	public String getName(){
@@ -18,10 +23,10 @@ public class Person {
 	public void setName(String name){
 		this.name = name;
 	}
-	public int getInt() {
+	public int getAge() {
 		return this.age;
 	}
-	public void setInt(int age) {
+	public void setAge(int age) {
 		this.age = age;
 	}
 
