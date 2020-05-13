@@ -12,14 +12,15 @@ public class Task1 {
 			}else {
 				System.out.print(array[i]+",");
 			}
-		}		System.out.println("]");
+		}		
+		System.out.println("]");
 
 		int sum = 0;
 		for (int num1 : array) {
 
 			sum += num1 ;
 		}
-		System.out.println("合計:"+sum);
+		System.out.println("合計:" + sum);
 
 
 	}
