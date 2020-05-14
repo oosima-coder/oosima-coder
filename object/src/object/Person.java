@@ -1,14 +1,14 @@
 package object;
 
 public class Person {
-	String name;
-	int age;
+	private String name;
+	private int age;
 	static int wallet;
 
 	public Person(){
 
 	}
-	public Person(String name,int age) {
+	public Person(String name, int age) {
 		this. name = name;
 		this.age = age;
 	}

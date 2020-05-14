@@ -2,7 +2,7 @@ package object;
 
 public class Dog extends Animal{
 
-	double weight = 12.3;
+	double weight ;
 
 	public  Dog(){};
 	public Dog(String name, int age, double weight) {
