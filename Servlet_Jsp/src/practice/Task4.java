@@ -1,7 +1,6 @@
 package practice;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.Date;
 
 import javax.servlet.ServletException;
@@ -23,7 +22,6 @@ public class Task4 extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html; charset = Shift_JIS");
-		PrintWriter out = response.getWriter();
 
 		Date today = new Date();
 		String [] text1 = {"大吉", "中吉", "小吉", "末吉", "凶", "大凶"};
@@ -32,7 +30,7 @@ public class Task4 extends HttpServlet {
 		FortuneBean fortuneBean = new FortuneBean();
 		fortuneBean.setToday(today);
 		fortuneBean.setFortune(text1[i]);
-		request.setAttribute("占う", fortuneBean);
+		request.setAttribute("result", fortuneBean);
 		request.getRequestDispatcher("/fortune_result.jsp").forward(request,  response);
 	}
 

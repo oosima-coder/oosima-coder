@@ -19,15 +19,13 @@ public class Task1 extends HttpServlet {
 		super();
 
 	}
-
-
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html; charset = Shift_JIS");
 		PrintWriter out = response.getWriter();
 		out.println("<!DOCTYPE html>");
 		out.println("<html>");
 		out.println("<head>");
-		out.println("<meta charset = 'Shit_JIS'>");
+		out.println("<meta charset = 'Shift_JIS'>");
 		out.println("<title> ServletJSP </title> ");
 		out.println("</head>");
 		out.println("<body>");

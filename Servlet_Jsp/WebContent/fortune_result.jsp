@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<% FortuneBean fortuneBean = (FortuneBean)request.getAttribute("占う"); %>
+<% FortuneBean fortuneBean = (FortuneBean)request.getAttribute("result"); %>
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
