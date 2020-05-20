@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<%!int count;%>
+<%!int count = 1;%>
 
 <%!Date date = new Date();%>
 
@@ -20,11 +20,13 @@
 <body>
 	<h1>
 		訪問回数:
-		<%= count++ + 1 %>
+		<%=count++%>
 	</h1>
 	<p>
 		今日の日付:
-		<% out.print(sdf.format(date)); %>
+		<%
+		out.print(sdf.format(date));
+	    %>
 	</p>
 
 </body>
