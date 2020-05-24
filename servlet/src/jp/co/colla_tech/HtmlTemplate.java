@@ -1,13 +1,9 @@
 package jp.co.colla_tech;
-
 import java.io.PrintWriter;
 
-import javax.servlet.annotation.WebServlet;
-
-@WebServlet("/HtmlTemplate")
 public class HtmlTemplate {
 
-	static void header(PrintWriter out) {
+	public static void header(PrintWriter out) {
 		out.println("<!DOCTYPE html>");
 		out.println("<html>");
 		out.println("<head>");
@@ -16,7 +12,7 @@ public class HtmlTemplate {
 		out.println("</head>");
 		out.println("<body>");
 	}
-	static void footer(PrintWriter out) {
+	public static void footer(PrintWriter out) {
 		out.println("</body>");
 		out.println("</html>");
 	}
