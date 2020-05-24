@@ -24,9 +24,7 @@
 	</h1>
 	<p>
 		今日の日付:
-		<%
-		out.print(sdf.format(date));
-	    %>
+		<%out.print(sdf.format(date));%>
 	</p>
 
 </body>
