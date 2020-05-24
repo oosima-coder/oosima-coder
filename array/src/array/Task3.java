@@ -1,17 +1,19 @@
 package array;
 
+import java.util.Random;
 public class Task3 {
 
 	public static void main(String[] args) {
 		int[] nums = new int[6];
 		int max = 0;
 		int min = 100;
+		Random r = new Random();
 		System.out.print("[");
 		for(int i = 0; i <  nums.length; i++){
-			nums[i] = new java.util.Random().nextInt(10);
+			nums[i] = r.nextInt(10);
 		}
 		for(int i = 0; i < nums.length; i++) {
-			if(i == 5) {
+			if(i == nums.length) {
 				System.out.print(nums[i]);
 			}else {
 				System.out.print(nums[i] + ",");
