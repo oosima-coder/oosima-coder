@@ -1,0 +1,8 @@
+データ操作
+
+課題２
+①doget
+2 dopost 
+3 doget
+4 dopost
+
