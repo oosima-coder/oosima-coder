@@ -6,13 +6,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<%!int count = 1;%>
+<%! int count = 1; %>
 
-<%!Date date = new Date();%>
+<%! Date date = new Date(); %>
 
 <%
-	SimpleDateFormat sdf = new SimpleDateFormat("yyyy年MM月dd日");
-    sdf.format(date);
+  SimpleDateFormat sdf = new SimpleDateFormat("yyyy年MM月dd日");
+  sdf.format(date);
 %>
 <meta charset="UTF-8">
 <title>JSP KADAI</title>
@@ -20,7 +20,7 @@
 <body>
 	<h1>
 		訪問回数:
-		<%=count++%>
+		<%= count++ %>
 	</h1>
 	<p>
 		今日の日付:
