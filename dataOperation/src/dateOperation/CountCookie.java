@@ -28,7 +28,7 @@ public class CountCookie extends HttpServlet {
 		out.println("</head>");
 		out.println("<body>");
 		out.print("<h1>訪問回数テスト(クッキー)</h1>");
-		
+
 		Cookie cookie[] = request.getCookies();
 		Cookie visitedCookie = null;
 
