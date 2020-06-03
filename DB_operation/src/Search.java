@@ -21,7 +21,7 @@ public class Search extends HttpServlet {
 		super();
 	}
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-request.setCharacterEncoding("UTF-8");
+		request.setCharacterEncoding("UTF-8");
 		response.setContentType("text/html; charset = UTF-8");
 		PrintWriter out = response.getWriter();
 		out.println("<!DOCTYPE html>");
@@ -59,18 +59,18 @@ request.setCharacterEncoding("UTF-8");
 
 			e.printStackTrace();
 		}
-	finally {
-		//データベースの切断
-		if (con != null) {
-			try {
-				con.close();
-			}
-			catch (SQLException e) {
-				//DB切断失敗時の処理
-				e.printStackTrace();
+		finally {
+			//データベースの切断
+			if (con != null) {
+				try {
+					con.close();
+				}
+				catch (SQLException e) {
+					//DB切断失敗時の処理
+					e.printStackTrace();
+				}
 			}
 		}
-	}
 		out.println("</body>");
 		out.println("</html>");
 	}

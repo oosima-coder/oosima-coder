@@ -23,18 +23,9 @@ public class updateemployee extends HttpServlet {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 
-			try {
-				con = DriverManager.getConnection("jdbc:mysql://localhost:3306/oosima_DB", "oosima","pass");
-				System.out.println("DB接続が成功しました");
-			} catch (SQLException e) {
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/oosima_DB", "oosima","pass");
+			System.out.println("DB接続が成功しました");
 
-				e.printStackTrace();
-			}
-		} catch (ClassNotFoundException e) {
-
-			e.printStackTrace();
-		}
-		try {
 			request.setCharacterEncoding("UTF-8");
 			String sql = "UPDATE employee SET name = ? WHERE id = ?";
 
@@ -52,6 +43,9 @@ public class updateemployee extends HttpServlet {
 			ps.executeUpdate();
 			ps.close();
 		} catch (SQLException e) {
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+
 			e.printStackTrace();
 		}
 		finally {

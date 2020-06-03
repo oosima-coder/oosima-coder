@@ -23,20 +23,9 @@ public class DeleteEmployee extends HttpServlet {
 		Connection con = null;
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/oosima_DB", "oosima","pass");
+			System.out.println("DB接続が成功しました");
 
-			try {
-				con = DriverManager.getConnection("jdbc:mysql://localhost:3306/oosima_DB", "oosima","pass");
-				System.out.println("DB接続が成功しました");
-			} catch (SQLException e) {
-
-				e.printStackTrace();
-			}
-		} catch (ClassNotFoundException e) {
-
-			e.printStackTrace();
-		}
-
-		try {
 			request.setCharacterEncoding("UTF-8");
 			String sql = "DELETE FROM employee WHERE id = ?";
 
@@ -49,6 +38,9 @@ public class DeleteEmployee extends HttpServlet {
 			ps.executeUpdate(); // executeQueryではない　これ重要　
 			ps.close();
 		} catch (SQLException e) {
+			e.printStackTrace();
+		}catch (ClassNotFoundException e) {
+
 			e.printStackTrace();
 		}
 		finally {
