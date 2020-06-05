@@ -22,10 +22,8 @@ public class updateemployee extends HttpServlet {
 		Connection con = null;
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-
 			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/oosima_DB", "oosima","pass");
 			System.out.println("DB接続が成功しました");
-
 			request.setCharacterEncoding("UTF-8");
 			String sql = "UPDATE employee SET name = ? WHERE id = ?";
 
@@ -33,11 +31,11 @@ public class updateemployee extends HttpServlet {
 
 			//name
 			String name = request.getParameter("name");
-			ps.setString(1,name);
-
 			//Striing→ int id
 			String id = request.getParameter("id");
 			int i = Integer.parseInt(id);
+
+			ps.setString(1,name);
 			ps.setInt(2, i);
 
 			ps.executeUpdate();
