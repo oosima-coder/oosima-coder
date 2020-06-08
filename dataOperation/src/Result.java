@@ -29,26 +29,22 @@ public class Result extends HttpServlet {
 		out.println("<body>");
 
 		String textbox = request.getParameter("name");
-		String checkbox = request.getParameter("radio01");
-		String checkbox2 = request.getParameter("select01");
+		String checkbox = request.getParameter("gender");
+		String checkbox2 = request.getParameter("type");
 		String area = request.getParameter("textArea");
-
-
 
 		out.print("以下の内容でお問い合わせしました。回答をお待ちください。" + "<br>");
 		out.print("名前:" + textbox + "様" + "<br>");
 		out.print("性別:" + checkbox + "<br>");
 
-		if(checkbox2.equals("about")) {
+		if("about".equals(checkbox2)) {
 			out.print("お問い合わせ種類: 製品について" + "<br>");
-		}else if(checkbox2.equals("trouble")) {
+		}else if("trouble".equals(checkbox2)) {
 			out.print("お問い合わせ種類: 不具合やクレーム" + "<br>");
 		}else {
 			out.print("お問い合わせ種類: アフターサポート" + "<br>");
 		}
-
 		out.print("お問い合わせ内容:" + area + "<br>");
-
 		out.println("</body>");
 		out.println("</html>");
 	}

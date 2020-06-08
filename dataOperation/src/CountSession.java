@@ -47,7 +47,7 @@ public class CountSession extends HttpServlet {
 
 		}
 
-		out.print("<a href= \"/dataOperation/CountCookie\">画面を再訪問</a>");
+		out.print("<a href= \"/dataOperation/CountSession\">画面を再訪問</a>");
 		out.println("</body>");
 		out.println("</html>");
 	}
